@@ -4,4 +4,5 @@ money = int(input("Сколько положим, Милорд?"))
 for i in per_cent:
     deposit_values.append((per_cent[i]) * (money / 100))
 max_deposit = max(deposit_values)
+print(deposit_values)
 print("Максимальная сумма, которую вы можете заработать —", max_deposit)
