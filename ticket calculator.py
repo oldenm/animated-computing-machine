@@ -1,7 +1,7 @@
 sum = 0
 ticket = int(input("Сколько билетов приобретем?"))
-print("Возраст?")
 for i in range(ticket):
+    print("Возраст", i+1, "участника?")
     age = int(input())
     if 18 <= age <= 25:
         sum += 990
