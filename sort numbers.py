@@ -23,7 +23,9 @@ def binary_search(array, element, left, right):
         return f"Индекс меньшего числа: {right}\nИндекс большего числа: {left}"
 
     middle = (right + left) // 2
-    if array[middle] == element:
+    if element not in array:
+        exit("Введенное число за пределами последовательности чисел")
+    elif array[middle] == element:
         if (middle - 1) == -1:
             return f"Индекс введенного числа: {middle}\nИндекс числа >= искомому числу: {middle + 1}"
         elif (middle + 1) == len(array):
